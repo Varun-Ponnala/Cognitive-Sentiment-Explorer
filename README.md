@@ -12,13 +12,14 @@ Data Ingestion → Data Preprocessing and Analysis (pandas) → Text Processing 
 Files uploaded on GitHub (csv and txt format)
 
 ## Methods
-Python Basics
-
 Variables, control flow, functions, exception handling
 Mini challenges: Fibonacci sequence generator 
 
 Data Cleaning with Pandas
 Data handling
+
+Visualization of Data
+Matplotlib
 
 Text Processing
 
@@ -36,13 +37,35 @@ KMeans clustering
 
 
 ## Tricky Problems Solved
+KMeans Initialization Issues
+Tuned parameters and standardized features to stabilize clustering results across runs.
+
+Mixed Data Formats in Ingestion
+
+Built preprocessing functions that adapt to both CSV and TXT file formats without separate pipelines.
 
 
 ## Key Findings
-- [Summarize main results]
+Used the elbow method to determine the optimal number of K clusters, which improved the quality and interpretability of the KMeans results.
+
+Compared the population of two countries from the countries.csv dataset using Matplotlib, Pandas, and related data analysis features to visualize trends over time.
+
+Performed sentiment analysis on text from the read.txt file, identifying the emotions present and quantifying their distribution.
 
 ## Limitations
-- [e.g., Language limitations, data representativity, bias, etc.]
+Finding Learning Resources While Coding
+
+Limited dataset size reduced statistical significance of some findings.
+
+Language coverage restricted to English; non-English text was excluded.
+
+Resource constraints made it challenging to quickly learn and implement advanced NLP techniques such as NLTK where I had to import more in Colab.
+
 
 ## Next Steps
-- [e.g., Improve model accuracy, expand data sources, deploy as web app]
+
+Expand dataset to include more sources, more data and provide an in-depth analysis.
+
+Integrate multilingual sentiment analysis to broaden applicability.
+
+Experiment with other advanced NLP models (e.g., BERT) for deeper contextual understanding.
