@@ -2,12 +2,12 @@
 
 ## Project Motivation
 
-The Cognitive Sentiment Explorer analyzes textual data to uncover sentiment trends and cognitive themes over time.
-It demonstrates how data cleaning, text processing, sentiment scoring, and clustering can be combined into an end-to-end cognitive analytics pipeline.
+The Cognitive Sentiment Explorer analyzes textual data to uncover sentiment, insights and cognitive themes over time.
+It demonstrates how data and text processing, sentiment scoring, and clustering can be combined to provide valuable information.
 
 ## Architecture (Pipeline Diagram)
 
-Data Ingestion → Data Preprocessing and Analysis (pandas) → Text Processing (tokenization, stopwords)
+Data Ingestion → Data Analysis (pandas) → Text Processing (tokenization, stopwords)
 → Sentiment Analysis (VADER + custom lexicon) → Clustering (KMeans) -> Insights
 
 ## Data
@@ -16,7 +16,7 @@ Files uploaded on GitHub (csv and txt format)
 
 ## Methods
 
-Variables, control flow, functions, exception handling
+Variables, control flow, loops and functions
 Mini challenges: Fibonacci sequence generator
 
 Data Cleaning with Pandas
@@ -27,29 +27,27 @@ Matplotlib
 
 Text Processing
 
-Custom tokenization without built-in split()
-Stopword removal, term frequency calculation
+Tokenization
+Stopword removal 
+Lemmatization
 
 Sentiment Analysis
 
 VADER sentiment scoring (Positive / Neutral / Negative)
 From-scratch lexicon-based scorer with negation handling
 
-
-
-Clustering \& Trends
+Clustering & Trends
 KMeans clustering
-
+Anomaly detection through pandas module
 
 
 ## Tricky Problems Solved
 
-KMeans Initialization Issues
-Tuned parameters and standardized features to stabilize clustering results across runs.
+Figuring out the ideal k value for K Means clustering.
 
-Mixed Data Formats in Ingestion
+Anomaly detection done through pandas and simple math.
 
-Built preprocessing functions that adapt to both CSV and TXT file formats without separate pipelines.
+Implementing advanced NLP techniques such as NLTK where I had to import more in Colab.
 
 
 
@@ -67,9 +65,7 @@ Finding Learning Resources While Coding
 
 Limited dataset size reduced statistical significance of some findings.
 
-Language coverage restricted to English; non-English text was excluded.
-
-Resource constraints made it challenging to quickly learn and implement advanced NLP techniques such as NLTK where I had to import more in Colab.
+Language coverage restricted to English; non-English text was excluded. (In text processing)
 
 
 
